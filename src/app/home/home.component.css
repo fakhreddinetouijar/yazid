@@ -1,0 +1,84 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+.main{
+   
+    background:url(" src/assets/images/bg.jpg");
+    background-color: transparent;
+   
+    background-repeat: no-repeat;
+  
+}
+.nav {
+   
+    top: 0;
+    width: 100%;
+    background-color: #39da61;
+    color: #fff;
+    
+    display: flex;
+    align-items: center;
+    height: 60px;
+    font: 500 20px/32px Roboto, "Helvetica Neue", sans-serif;
+  
+    
+  }
+  .nav p{
+    background-color: transparent;
+    margin-top: 1%;
+    margin-left: 1%;
+  }
+  .btn-group{
+    margin-left: 5%;
+   margin-right: 5%;
+   margin-top: 0.1%;
+   
+   
+    background: none;
+   
+  }
+  .btn-group button{
+    background-color:transparent;
+    color: black;
+    border-color:transparent;
+  }
+ img{
+    margin-top: 0%;
+    margin-left: 3%;
+    height: 90%;
+    margin-right: 0;
+    width: 90%;
+    border-radius: 7%;
+    border-color: #39da61;
+    border-style:double;
+  }
+
+  .Discription{
+    width: 70%;
+  }
+  .Discription p{
+   text-align: start;
+   padding-top: 0;
+    height: 30%;
+    width: 100%;
+    
+  }
+  .all{
+    margin-top: 5%;
+    margin-right: 10%;
+    display: flex;
+  }
+  .imageDiscription{
+    margin-right: 10%;
+  }
+  .image2{
+    margin-top: 0%;
+    margin-left: 1.7%;
+    height: 30%;
+    margin-right: 9%;
+    width: 50%;
+    
+  }
+  
