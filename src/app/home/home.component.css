@@ -1,14 +1,14 @@
 *{
     margin:0;
     padding: 0;
+    background-color:rgba(252, 253, 253, 0.575);
 }
 
 .main{
    
-    background:url(" src/assets/images/bg.jpg");
-    background-color: transparent;
+    
    
-    background-repeat: no-repeat;
+   margin-top: 5%;
   
 }
 .nav {
@@ -16,7 +16,7 @@
     top: 0;
     width: 100%;
     background-color: #39da61;
-    color: #fff;
+    color: #000000;
     
     display: flex;
     align-items: center;
@@ -56,13 +56,18 @@
   }
 
   .Discription{
-    width: 70%;
+    width: 60%;
+    background-color: none;
+    height: 40%;
+    
+    margin-top: 0%;
   }
   .Discription p{
    text-align: start;
    padding-top: 0;
-    height: 30%;
+    height: 25%;
     width: 100%;
+    background: transparent;
     
   }
   .all{
@@ -72,13 +77,38 @@
   }
   .imageDiscription{
     margin-right: 10%;
+    justify-content: space-between;
+    width: 90%;
+    height: 60%;
   }
   .image2{
     margin-top: 0%;
+    margin-top: -20%;
     margin-left: 1.7%;
     height: 30%;
     margin-right: 9%;
-    width: 50%;
+    width: 53%;
     
   }
+  i{
+    margin-top: 2%;
+    background: none;
+    color: black;
+    margin-right: 5%;
+  }
+  .Partenaires{
+    margin-top: 0%;
+    
+  }
+
+ 
+  .Partenaires img{
   
+    width: 20%;
+    height: 20%;
+   
+  }
+  h1{
+   
+    padding-top: 8%;
+  }
