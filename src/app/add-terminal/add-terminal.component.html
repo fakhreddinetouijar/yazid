@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<div class="row">
+    <div class="col-75">
+      <div class="container">
+        <form  method="post" class="form"  (ngSubmit)=" AddTerminal()" >
+  
+          <div class="row">
+            <div class="col-50">
+              <h3>ADDING Terminal</h3>
+              <label for="Terminal_Number"><i class="fa fa-user"></i> Terminal_Number</label>
+              <input type="text" id="Terminal_number"  [(ngModel)]="terminal.terminal_number" name="Terminal_number" placeholder="Terminal_Number">
+              <label for="currency_code"><i class="fa fa-envelope"></i> Currency_code</label>
+              <input type="text" id="currency_code" [(ngModel)]="terminal.currency_code" name="currency_code" placeholder="currency_code">
+              <label for="adr"><i class="fa-sharp fa-regular fa-code-simple"></i> Bank_code</label>
+              <input type="text" id="bank_code" [(ngModel)]="terminal.bank_code" name="bank_code" placeholder="baknk_code">
+              <label for="city"><i class="fa fa-institution"></i> Master_pos_indicator</label>
+              <input type="text" id="master_pos_indicator" [(ngModel)]="terminal.master_pos_indicator " name="master_pos_indicator"  placeholder="Master_pos_Indicator">
+              <label for="city"><i class="fa fa-institution"></i> Master_pos_number</label>
+              <input type="text" id="master_pos_number" [(ngModel)]="terminal.master_pos_number" name="master_pos_number" placeholder="master_pos_number">
+              <label for="city"><i class="fa fa-institution"></i> Outlet_number</label>
+              <input type="text" id="outlet_number" [(ngModel)]="terminal.outelt_number" name="outlet_number" placeholder="outlet_number">
+              <label for="city"><i class="fa fa-institution"></i> Terminal_pos_grouping</label>
+              <input type="text" id="terminal_pos_grouping" [(ngModel)]="terminal.terminal_pos_grouping" name="terminal_pos_grouping" placeholder="terminal_pos_grouping">
+              <label for="city"><i class="fa fa-institution"></i> Pos_acronym</label>
+              <input type="text" id="pos_acronym" [(ngModel)]="terminal.pos_acronym"  name="pos_acronym" placeholder="pos_acronym">
+              <label for="city"><i class="fa fa-institution"></i> Pos_location</label>
+              <input type="text" id="pos_location" [(ngModel)]="terminal.pos_location" name="pos_location" placeholder="pos_location">
+              <label for="city"><i class="fa fa-institution"></i> City_code</label>
+              <input type="text" id="city_code" [(ngModel)]="terminal.city_code" name="cidty_code" placeholder="city_code">
+              <label for="city"><i class="fa fa-institution"></i> Region_code</label>
+              <input type="text" id="region_code" [(ngModel)]="terminal.region_code" name="region_code" placeholder="region_code">
+              <label for="city"><i class="fa fa-institution"></i> Country_code</label>
+              <input type="text" id="country_code" [(ngModel)]="terminal.country_code" name="country_code" placeholder="country_code">
+              <label for="city"><i class="fa fa-institution"></i> Pos_brand_code</label>
+              <input type="text" id="pos_brand_code" [(ngModel)]="terminal.pos_brand_code" name="pos_brand_code" placeholder="pos_brand_code">
+              <label for="city"><i class="fa fa-institution"></i> Protocol_brand_index</label>
+              <input type="text" id="protocol_brand_index" [(ngModel)]="terminal.protocol_brand_index" name="protocol_brand_index"  placeholder="protocol_brand_index">
+              <label for="city"><i class="fa fa-institution"></i> Protocol_index</label>
+              <input type="text" id="protocol_index" [(ngModel)]="terminal.protocol_index" name="protocol_index" placeholder="protocol_index">
+              <label for="city"><i class="fa fa-institution"></i> Pos_profile_code</label>
+              <input type="text" id="pos_profile_code" [(ngModel)]="terminal.pos_profile_code" name="pos_profile_code" placeholder="pos_profile_code">
+              <label for="city"><i class="fa fa-institution"></i> Transaction_processing_mode</label>
+              <input type="text" id="transaction_processing_mode" [(ngModel)]="terminal.transaction_processing_mode" name="transaction_processing_mode" placeholder="transaction_processing_mode">
+              <label for="city"><i class="fa fa-institution"></i>Serial_number</label>
+              <input type="text" id="serial_number" [(ngModel)]="terminal.serial_number" name="serial_number" placeholder="serial_number">
+              <label for="city"><i class="fa fa-institution"></i>Serial_number_pin_pad</label>
+              <input type="text" id="serial_number_pin_pad" [(ngModel)]="terminal.serial_number_pin_pad" name="serial_number_pin_pad" placeholder="serial_number_ping_pad">
+              <label for="city"><i class="fa fa-institution"></i>installation_date</label>
+              <input type="date" id="instalation_date" [(ngModel)]="terminal.installation_date" name="installation_date" placeholder="installation_date">
+              <label for="city"><i class="fa fa-institution"></i>Terminal_mode_status</label>
+              <input type="text" id="terminal_mode_status"  [(ngModel)]="terminal.terminal_mode_status" name="terminal_mode_status" placeholder="terminal_mode_status">
+  
+              <div class="row">
+         
+            </div>
+  
+          
+  
+          </div>
+           <div>
+          <input class="btn1" id="submit-btn" type="submit" name="submit" value="SUBMIT" >
+          <input type="reset" value="reset" class="btn2">
+        </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  
+    

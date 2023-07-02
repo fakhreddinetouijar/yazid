@@ -1,0 +1,78 @@
+<div class="topnav">
+    <a >Show</a>
+  <input type="number" value="0" id="userN">
+
+<img src="assets/Image/—Pngtree—search vector icon_4015255.png" alt="">
+
+    <input type="text" placeholder="Search..">
+
+  </div>
+ 
+    <body>
+        <div class="table">
+
+          
+<div class="table_header">
+
+      <p>  Terminal Users </p> 
+      <div>
+       
+      </div>
+</div>
+
+          
+      
+      
+           
+             <div class="table_section">
+              <table>
+                   <thead>
+                       <tr > 
+                        <th>User_id</th>
+                          <th>user_name</th>
+                          <th>user_code</th>
+                          <th>status</th>
+                          <th>Staff_ID</th>
+                          <th>Job_Title</th>
+                          <th>Email</th>
+                          <th>Employe_num</th>
+                         
+                          <th>Acces</th>
+                          <th>Action</th>
+      
+                          
+                       </tr>
+                   </thead>
+                   <tbody>
+                         <tr  *ngFor="let terminalusers of terminalusersdetails">
+                          <ng-container *ngIf="terminalusers.status_terminaluser == 'Active'">
+                            <td>{{terminalusers.terminal_User_id}}</td>
+                          <td>{{terminalusers.username}}</td>
+                          <td>{{terminalusers.user_code}}</td>
+                          <td>{{terminalusers.status_terminaluser}}</td>
+                          <td>{{terminalusers.staff_indicateur}}</td>
+                          <td>{{terminalusers.role}}</td>
+                          <td>{{terminalusers.email}}</td>
+                          <td>{{terminalusers.employe_number}}</td>
+                          
+                        
+                          <td>
+                            <button><i class="fa-solid fa-pen-to-square"></i></button>
+                            <button><i class="fa-sharp fa-solid fa-trash"></i></button>
+                          </td>
+                          <td ><button class="blocker"  (click)="blockterminaluser(terminalusers)"><i class="fa-solid fa-lock"></i>  LOCK</button></td>
+                          </ng-container>
+                             
+                         </tr>
+                        
+                   </tbody>
+
+                     
+              </table>
+
+            
+             </div>
+          
+        </div>
+        </body>
+      

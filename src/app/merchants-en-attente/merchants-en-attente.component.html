@@ -1,0 +1,60 @@
+
+
+<div class="topnav">
+    <a >Show</a>
+  <input type="number" value="0" id="userN">
+
+<img src="assets/Image/—Pngtree—search vector icon_4015255.png" alt="">
+
+    <input type="text" placeholder="Search..">
+
+  </div>
+  <body>
+    <body>
+        <div class="table">
+
+            <div class="table">
+<div class="table_header">
+
+      <p>  Merchant  En Attente </p> 
+      
+</div>
+
+            </div>
+      
+      
+           
+             <div class="table_section">
+              <table>
+                   <thead>
+                    <tr>
+                      <th>Merchant_ID</th>
+                      <th>Merchant Name</th>
+                      <th>Bank-code</th>
+                      <th> location</th>
+                      <th>status_Merchant</th>
+                      <th>Action</th>
+                
+  
+                          
+                       </tr>
+                   </thead>
+                   <tbody>
+                   <tr *ngFor="let merchant of Merchantdetails">
+                    <td>{{merchant.merchant_number}}</td>
+                    <td>{{merchant.company_name}}</td>
+                    <td>{{merchant.bank_Code}}</td>
+                    <td>{{merchant. location}}</td>
+                    <td>{{merchant.status_Merchant}}</td>
+                  
+                        
+                        
+                          <td ><button class="blocker"  (click)="validermerchant(merchant)"><i class="fa-solid fa-check"></i>Valider </button><button class="nonvalide"><i class="fa-solid fa-hand"></i>Annuler</button></td>
+                             
+                         </tr>
+                        
+                   </tbody>
+              </table>
+             </div>
+        </div></body>
+      

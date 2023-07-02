@@ -1,0 +1,78 @@
+<div class="row">
+    <div class="col-75">
+      <div class="container">
+        <form action="/action_page.php"  #registerForm="ngForm" (ngSubmit)="registerUser(registerForm)" >
+  
+          <div class="row">
+            <div class="col-50">
+              <h3>ADDING USER</h3>
+              <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+              <input type="text" id="name" #name (ngModel)="name" name="name"  placeholder="John M. Doe">
+              <label for="email"><i class="fa fa-envelope"></i> Email</label>
+              <input type="text" id="email" name="email" #email (ngModel)="email" placeholder="john@example.com">
+              <label for="adr"><i class="fa-sharp fa-regular fa-code-simple"></i> Password</label>
+              <input type="text" id="password" #password  (ngModel)="password"    name="password" placeholder="password">
+              <label for="city"><i class="fa fa-institution" ></i> City</label>
+              <input type="text" id="city" name="city" #city (ngModel)="city" placeholder="New York">
+              <label for="city"><i class="fa fa-institution" ></i> User_ID</label>
+              <input type="text" id="ID" name="ID" #ID (ngModel)="ID" placeholder="User_iD">
+              <label for="city"><i class="fa fa-institution" ></i> status</label>
+              <input type="text" id="ID" name="ID" #ID (ngModel)="ID" placeholder="Active/inActive">
+          
+
+
+              <div class="row">
+                <div class="col-50">
+                  <label for="state">State</label>
+                  <input type="text" id="state" name="state" placeholder="NY">
+                </div>
+                <div class="col-50">
+                    <label for="Jobtitle">jobTitle</label>
+                    <input type="text" id="Jobtitle" name="Jobtitle" placeholder="USER-ROLE">
+                  </div>
+                <div class="col-50">
+                  <label for="zip">Account Starting Date</label>
+                  <input type="date" id="start-date" name="expiry-date" >
+                </div>
+                <div class="col-50">
+                  <label for="zip">Account Ending Date</label>
+                  <input type="date" id="expiry-date" name="expiry-date" >
+                </div>
+                <div class="col-50"  >
+                  <label for="Tables">Choose a ROLE:(Multiple choice)</label>
+                  <div>
+                    <input type="checkbox" id="canCreateTerminalUser" name="canCreateTerminalUser" #CanCreateTerminalUser (ngModel)="CanCreateTerminalUser">
+                    <label for="createTerminal">Can Create Terminal User</label>
+                  </div>
+                  
+                  <div>
+                    <input type="checkbox" id="updateTerminal" name="canUpdateTerminalUser" #canUpdateTerminalUser (ngModel)="canUpdateTerminalUser">
+                    <label for="updateTerminal">Can Update Terminal User</label>
+                  </div>
+                  
+                  <div>
+                    <input type="checkbox" id="deleteTerminal" name="canDeleteTerminalUser" #canDeleteTerminalUser (ngModel)="canDeleteTerminalUser">
+                    <label for="deleteTerminal">Can Delete Terminal User</label>
+                  </div>
+                  
+                  
+                 
+          
+                </div>
+              </div>
+            </div>
+  
+          
+  
+          </div>
+          <label>
+            <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+          </label>
+          <input type="submit" value="Submit" class="btn1">
+          <input type="reset" value="reset" class="btn2">
+          <input type="logout"  value="close" class="btn3" routerLink="/Menu/GestionUsers">
+        </form>
+      </div>
+    </div>
+  
+    

@@ -1,0 +1,43 @@
+<div class="topnav">
+    <a>Show</a>
+    <input type="number" value="0" id="userN">
+    <img src="assets/Image/—Pngtree—search vector icon_4015255.png" alt="">
+    <input type="text" placeholder="Search..">
+  </div>
+  
+  <body>
+    <div class="table">
+      <div class="table_header">
+        <p>RejectedTerminals</p>
+      </div>
+      <div class="table_section">
+        <table>
+          <thead>
+            <tr>
+              <th>Terminal_number</th>
+              <th>Currency_code</th>
+              <th>Bank_Code</th>
+              <th>Master_pos_indicator</th>
+              <th>Master_pos_indicator</th>
+              <th>Master_pos_number</th>
+              <th>Terminal_pos_grouping</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let terminal of terminaldetails">
+              <ng-container *ngIf="terminal.terminal_mode_status == 'Annuler'">
+                <td>{{ terminal.terminal_number }}</td>
+                <td>{{ terminal.currency_code }}</td>
+                <td>{{ terminal.bank_code }}</td>
+                <td>{{ terminal.master_pos_indicator }}</td>
+                <td>{{ terminal.master_pos_number }}</td>
+              
+              
+              </ng-container>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+  

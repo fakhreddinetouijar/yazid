@@ -1,0 +1,78 @@
+<div class="row">
+    <div class="col-75">
+      <div class="container">
+        <form class="form" method="post"   (ngSubmit)="AddMerchant()">
+  
+          <div class="row">
+            <div class="col-50">
+              <h3>ADDING Merchant</h3>
+              <label for="fname"><i class="fa fa-user"></i> bank_code</label>
+              <input type="text" id="bank_Code" [(ngModel)]="merchant.bank_Code" name="bank_Code" placeholder="bank_code">
+              <label for="email"><i class="fa fa-envelope"></i> merchant_number</label>
+              <input type="text" id="merchant_number" [(ngModel)]="merchant.merchant_number" name="merchant_number" placeholder="merchant_number">
+              <label for="adr"><i class="fa-sharp fa-regular fa-code-simple"></i> chain_code</label>
+              <input type="text" id="chain_Code" [(ngModel)]="merchant.chain_Code" name="chain_Code" placeholder="chain_code">
+              <label for="city"><i class="fa fa-institution"></i> Contract_Number</label>
+              <input type="text" id="contract_number" [(ngModel)]="merchant.contract_number" name="contract_number" placeholder="Contract_Number">
+              <label for="city"><i class="fa fa-institution"></i> company_Name</label>
+              <input type="text" id="companu_name" [(ngModel)]="merchant.company_name" name="company_name" placeholder="company_Name">
+              <label for="city"><i class="fa fa-institution"></i> branch_code</label>
+              <input type="text" id="branch_Code" name="branch_Code" [(ngModel)]="merchant.branch_Code" placeholder="branch_code">
+              <label for="city"><i class="fa fa-institution"></i> location</label>
+              <input type="text" id="location" name="location" [(ngModel)]="merchant.location" placeholder="location">
+              <label for="city"><i class="fa fa-institution"></i> legal_id</label>
+              <input type="text" id="legal_id" [(ngModel)]="merchant.legal_id" name="legal_id" placeholder="legal_id">
+              <label for="city"><i class="fa fa-institution"></i> legal_id_type</label>
+              <input type="text" id="legal_id_type" [(ngModel)]="merchant.legal_id_type" name="legal_id_type" placeholder="legal_id_type">
+              <label for="city"><i class="fa fa-institution"></i> partner_branch_id</label>
+              <input type="text" id="partner_branch_id" [(ngModel)]="merchant.partner_branch_id" name="partner_branch_id" placeholder="partner_brand_id">
+              <label for="city"><i class="fa fa-institution"></i> Channel_Number</label>
+              <input type="text" id="channel_number" [(ngModel)]="merchant.channel_number" name="channel_number" placeholder="Channel_Number">
+              <label for="city"><i class="fa fa-institution"></i> staff_id</label>
+              <input type="text" id="staff_id" [(ngModel)]="merchant.staff_id" name="staff_id" placeholder="staff_id">
+              <label for="city"><i class="fa fa-institution"></i> country_code</label>
+              <input type="text" id="country_code" [(ngModel)]="merchant.country_code" name="country_code" placeholder="country_code">
+              <label for="city"><i class="fa fa-institution"></i> language_code</label>
+              <input type="text" id="language_code" [(ngModel)]="merchant.language_code" name="language_code" placeholder="language_code">
+              <label for="city"><i class="fa fa-institution"></i> status_Merchant</label>
+              <input type="text" id="status_Merchant" [(ngModel)]="merchant.status_Merchant" name="status_Merchant" placeholder="agrement_date">
+              <label for="city"><i class="fa fa-institution"></i> currency_Merchant</label>
+              <input type="text" id="curency_merchant" [(ngModel)]="merchant.currency_Merchant" name="currency_Merchant" placeholder="currency_Merchant">
+              <label for="city"><i class="fa fa-institution"></i> acronym</label>
+              <input type="text" id="curency_merchant" [(ngModel)]="merchant.acronym" name="acronym" placeholder="acronym">
+  
+  
+              <div class="row">
+                <div class="col-50">
+                  <label for="state">State</label>
+                  <input type="text" id="state" name="state" placeholder="NY">
+                </div>
+                <div class="col-50">
+                    <label for="Jobtitle">jobTitle</label>
+                    <input type="text" id="Jobtitle" name="Jobtitle" placeholder="USER-ROLE">
+                  </div>
+                <div class="col-50">
+                  <label for="zip">Account Starting Date</label>
+                  <input type="date" id="start-date" name="expiry-date" >
+                </div>
+                <div class="col-50">
+                  <label for="zip">Account Ending Date</label>
+                  <input type="date" id="expiry-date" name="expiry-date" >
+                </div>
+              </div>
+            </div>
+  
+          
+  
+          </div>
+          <label>
+            <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+          </label>
+          <input id="submit-btn" type="submit" name="submit" value="SUBMIT" class="btn1">
+          <input type="reset" value="reset" class="btn2">
+  
+        </form>
+      </div>
+    </div>
+  
+    

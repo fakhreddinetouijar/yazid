@@ -1,0 +1,112 @@
+
+
+<div class="topnav">
+    <a >Show</a>
+  <input type="number" value="0" id="userN">
+  
+<div class="search-container">
+  <img src="assets/Image/—Pngtree—search vector icon_4015255.png" alt="">
+    <input type="text" placeholder="Search.."  style="margin-left:0; padding-left:10px;">   </div></div>
+
+ 
+  <body>
+  <div class="table">
+    <div class="table_header">
+
+      <p>  Users </p> 
+      <div>
+          <button  class="ADD"  routerLink="/Menu/carduser"><i class="fa-solid fa-user-plus" style="margin-right: 5px; font-size: larger;"></i>    ADD USER</button>
+          <button  class="block"  routerLink="/Menu/BlockedTerminal"><i style="margin-right: 5px; font-size: larger;" class="fa-sharp fa-solid fa-user-lock"></i>    BLOCKED </button>
+         
+      </div>
+</div>
+
+
+     
+       <div class="table_section">
+        <table>
+             <thead>
+                 <tr>
+                    <th>ID</th>
+                   
+                    <th>Email</th>
+                  <th>Status</th>
+             
+                    <th>Action</th>
+                    <th>Accées</th>
+
+                  
+
+                    
+                 </tr>
+             </thead>
+             <tbody>
+                
+                  
+               
+                   <tr *ngFor="let user of userdetails">
+                 
+                   
+                       <td>{{user.id}}</td>
+                   
+                       <td>{{user.email}}</td>
+                       <td>{{user.status}}</td>
+               
+                    
+                    <td>
+                      <button data-bs-toggle="modal" data-bs-target="#exampleModal" (click)="update(user)"><i class="fa-solid fa-pen-to-square" ></i></button>
+                      <button type="button" class="btn btn-danger" (click)="deleteuser(user)"><i class="fa-sharp fa-solid fa-trash"></i></button>
+                    </td>
+                    <td ><button class="blocker"><i class="fa-solid fa-lock"></i>  lock</button></td>
+                       
+                   </tr>
+             </tbody>
+        </table>
+          <!-- Modal -->
+    
+       </div>
+     
+
+  </div>
+
+
+
+
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title " id="exampleModalLabel">Edit User</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form #updateForm="ngForm" (ngSubmit)="updateuser()">
+            <div class="c" >
+              <div class="a">
+              <label for="exampleInputEmail1" class="form-label">ID </label>
+              <input type="text" id="rollnumber" name="rollnumber" #rollnumber [(ngModel)]="userstoupdate.rollnumber" placeholder="" >
+            </div>
+            
+            <div class="a">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="text" id="email" name="email" #email [(ngModel)]="userstoupdate.email" placeholder="user.email">
+            
+            </div>
+
+            <div class="a">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="text" id="password" #password  [(ngModel)]="userstoupdate.password"    name="password" placeholder="">
+            </div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="submit" class="btn btn-primary">Save changes</button>
+        </div>
+        </form>
+      </div>
+      </div>
+    </div>
+  </div>
+</body>

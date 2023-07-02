@@ -1,0 +1,51 @@
+<div class="topnav">
+    <a>Show</a>
+    <input type="number" value="0" id="userN">
+    <img src="assets/Image/—Pngtree—search vector icon_4015255.png" alt="">
+    <input type="text" placeholder="Search..">
+  </div>
+  
+  <body>
+    <div class="table">
+      <div class="table_header">
+        <p>RejectedTerminals</p>
+      </div>
+      <div class="table_section">
+        <table>
+            <thead>
+                <tr > 
+                   <th>user_name</th>
+                   <th>user_code</th>
+                   <th>status</th>
+                   <th>Stastaff_indicateur</th>
+                   <th>job_title</th>
+                   <th>email</th>
+                   <th> employe_num</th>
+                   <th>user_id</th>
+             
+
+                   
+                </tr>
+            </thead>
+            <tbody>
+                  <tr  *ngFor="let terminalusers of terminalusersdetails">
+                   <ng-container *ngIf="terminalusers.status_terminaluser == 'Active'">
+                   <td>{{terminalusers.user_name}}</td>
+                   <td>{{terminalusers.user_code}}</td>
+                   <td>{{terminalusers.status}}</td>
+                   <td>{{terminalusers.staff_indicateur}}</td>
+                   <td>{{terminalusers.job_title}}</td>
+                   <td>{{terminalusers.email}}</td>
+                   <td>{{terminalusers.employe_num}}</td>
+                   <td>{{terminalusers.id_user}}</td>
+                 
+                 
+                
+                   </ng-container>
+                      
+                  </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>

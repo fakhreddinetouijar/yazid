@@ -1,0 +1,60 @@
+<div class="row">
+    <div class="col-75">
+      <div class="container">
+        <form method="post" class="form"  (ngSubmit)=" addterminalusers()">
+  
+          <div class="row">
+            <div class="col-50">
+              <h3>ADDING Terminal_User</h3>
+              <label for="fname"><i class="fa fa-user"></i> user_name</label>
+              <input type="text" id="username"  [(ngModel)]="terminalusers.username" name="username" placeholder="user_name">
+             
+              <label for="email"><i class="fa fa-envelope"></i> user_code</label>
+              <input type="text" id="user_code" [(ngModel)]="terminalusers.user_code" name="user_code" placeholder="user_code">
+              <label for="adr"><i class="fa-sharp fa-regular fa-code-simple"></i> status</label>
+              <input type="text" id="status" [(ngModel)]="terminalusers.status" name="status" placeholder="status">
+              <label for="city"><i class="fa fa-institution"></i> staff_indicateur</label>
+              <input type="text" id="staff_indicateur" [(ngModel)]="terminalusers.staff_indicateur" name="staff_indicateur" placeholder="staff_indicateur ">
+              <label for="city"><i class="fa fa-institution" ></i> job_title</label>
+              <input type="text" id="job_title" [(ngModel)]="terminalusers.job_title" name="job_title"  placeholder="job_title">
+              <label for="city"><i class="fa fa-institution" ></i> email</label>
+              <input type="text" id="email" name="email" [(ngModel)]="terminalusers.email" placeholder="email">
+              <label for="city"><i class="fa fa-institution" ></i> employe_num</label>
+              <input type="text" id="employe_num" [(ngModel)]="terminalusers.employe_num" name="employe_num"  placeholder="employe_num">
+              <label for="city"><i class="fa fa-institution" ></i> id_user</label>
+              <input type="text" id="id_user" [(ngModel)]="terminalusers.id_user" name="id_user" placeholder="id_user">
+
+             
+  
+              <div class="row">
+                <div class="col-50">
+                  <label for="state">State</label>
+                  <input type="text" id="state" name="state" placeholder="NY">
+                </div>
+
+                <div class="col-50">
+                  <label for="zip">Account Starting Date</label>
+                  <input type="date" id="account_Starting_Day" [(ngModel)]="terminalusers.account_Starting_Day" name="account_Starting_Day" >
+                </div>
+                <div class="col-50">
+                  <label for="zip">Account Ending Date</label>
+                  <input type="date" id="account_Ending_Day" [(ngModel)]="terminalusers.account_Ending_Day" name="account_Ending_Day" >
+                </div>
+              </div>
+            </div>
+  
+          
+  
+          </div>
+          <label>
+            <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+          </label>
+          <input type="submit" value="Submit" class="btn1">
+          <input type="reset" value="reset" class="btn2">
+          <input type="logout"  value="close" class="btn3" routerLink="/Menu/TerminalUsers">
+        </form>
+      </div>
+    </div>
+  
+    
+

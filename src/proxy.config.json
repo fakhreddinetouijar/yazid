@@ -1,0 +1,13 @@
+{
+    "/api": {
+      "target": "http://f7ca-196-117-235-213.ngrok-free.app/api/addterminal",
+      "secure": false,
+      "changeOrigin": true,
+      "pathRewrite": {
+        "^/api": ""
+      },
+      "headers": {
+        "Access-Control-Allow-Origin": "http://localhost:4200"
+      }
+    }
+  }

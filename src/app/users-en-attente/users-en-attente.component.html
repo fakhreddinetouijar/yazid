@@ -1,0 +1,62 @@
+
+<div class="topnav">
+    <a >Show</a>
+  <input type="number" value="0" id="userN">
+
+<img src="assets/Image/—Pngtree—search vector icon_4015255.png" alt="">
+
+    <input type="text" placeholder="Search..">
+
+  </div>
+
+    <body>
+      
+
+           
+<div class="table_header">
+
+      <p>  Terminal Users En Attente </p> 
+     
+</div>
+
+      
+      
+      
+           
+             <div class="table_section">
+              <table>
+                   <thead>
+                       <tr>
+                          <th>ID</th>
+                          <th>Full Name</th>
+                          <th>Status</th>
+                          <th>Staff_id</th>
+                          <th>Email</th>
+                          <th> Employe_num</th>
+                          <th>Action</th>
+                         
+                          
+                       </tr>
+                   </thead>
+                   <tbody>
+                    <tr  *ngFor="let terminalusers of terminalusersdetails">
+                      <ng-container *ngIf="terminalusers.status_terminaluser == 'Pause'">
+                      <td>{{terminalusers.terminal_User_id}}</td>
+                      <td>{{terminalusers.username}}</td>
+                      <td>{{terminalusers.status_terminaluser}}</td>
+                      <td>{{terminalusers.staff_indicateur}}</td>
+                   
+                      <td>{{terminalusers.email}}</td>
+                      <td>{{terminalusers.employe_number}}</td>
+                    
+                        
+                        
+                          <td ><button class="blocker"  (click)="validerterminal(terminalusers)"><i class="fa-solid fa-check"></i>Valider </button><button class="nonvalide"  (click)="Annulerterminaluser(terminalusers)"><i class="fa-solid fa-hand"></i>Annuler</button></td>
+                        </ng-container>
+                         </tr>
+                        
+                   </tbody>
+              </table>
+             </div>
+      </body>
+      

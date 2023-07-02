@@ -1,0 +1,117 @@
+<div class="topnav">
+    <a >Show</a>
+  <input type="number" value="0" id="userN">
+
+
+
+  <div class="wrap">
+    <div class="search">
+       <input type="text" class="searchTerm" placeholder="What are you looking for?">
+       <button type="submit" class="searchButton">
+         <i class="fa fa-search"></i>
+      </button>
+    </div>
+ </div>
+
+  </div>
+  <body>
+    <body>
+        <div class="table">
+
+            <div class="table">
+<div class="table_header">
+
+      <p>  Merchants</p> 
+      
+</div>
+
+            </div>
+      
+      
+           
+             <div class="table_section">
+              <table>
+                   <thead>
+                       <tr>
+                          <th>Merchant_ID</th>
+                          <th>Merchant Name</th>
+                          <th>Bank-code</th>
+                          <th> location</th>
+                          <th>status_Merchant</th>
+                          <th>Action</th>
+                          <th> accès</th>
+      
+                          
+                       </tr>
+                   </thead>
+                   <tbody>
+                         <tr *ngFor="let merchant of Merchantdetails">
+                          <td>{{merchant.merchant_number}}</td>
+                          <td>{{merchant.company_name}}</td>
+                          <td>{{merchant.bank_Code}}</td>
+                          <td>{{merchant. location}}</td>
+                          <td>{{merchant.status_Merchant}}</td>
+                        
+                        
+                          <td>
+                            <button data-bs-toggle="modal" data-bs-target="#exampleModal"  ><i class="fa-solid fa-pen-to-square"></i></button>
+                            <button (click)="deleteMerchant(merchant)"><i class="fa-sharp fa-solid fa-trash"></i></button>
+                          </td>
+                          <td ><button class="blocker"><i class="fa-solid fa-lock"></i>  LOCK</button></td>
+                             
+                         </tr>
+                        
+                   </tbody>
+
+                     
+              </table>
+        
+            
+             </div>
+          
+        </div>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Edit Merchant</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <form #updateForm="ngForm" (ngSubmit)="modifyMerchant(merchant)">
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">merchant-number </label>
+                    <input type="text" id="merchant-number" name="merchant-number"  [(ngModel)]="merchant.merchant_number" placeholder="new-merchant-number">
+                  
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">company_name</label>
+                    <input type="text" id="email" name="email" #email [(ngModel)]="merchant.company_name" placeholder="new-company-name">
+                  
+                  
+
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">bank-code</label>
+                    <input type="text" id="bank-code" #password  [(ngModel)]="merchant.bank_Code"    name="bank_code" placeholder="new-bankCode">
+        
+                  </div>
+                
+                  <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                  </div>
+                
+              
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-primary">Save changes</button>
+              </div>
+              </form>
+            </div>
+            </div>
+          </div>
+        </div>
+        </body>
+      
+

@@ -1,0 +1,71 @@
+
+.main-analytic{
+    width : 80%;
+    height :500px;    
+    background: #2C3333;
+    border-radius: 15px;
+    margin-left: 10%;
+    
+}
+
+.header-analytics{
+    display:flex;
+    justify-content:space-between;
+    align-items: baseline; 
+    margin:.5rem;
+    padding:1rem;
+    margin-bottom: 0;
+}
+
+
+.month-filter{
+    padding:.4rem .9rem;
+    background:#c2dfff;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+input[type='date']{
+    background:rgb(44, 51, 51,.5);  
+    border:none;
+    margin-left: .5rem;
+    padding:.2rem .5rem;
+    border-radius: 15px;
+    font-size: .8rem;
+    text-align:center;
+    font-weight: bold;
+    text-transform: uppercase;
+    opacity: .9;
+}
+input[type="date"]:focus{
+    outline:none;
+}
+
+label{
+    color:#2C3333;
+    margin-right:.5rem;
+    vertical-align:baseline;
+    font-weight: bold;
+    padding:.2rem .5rem;
+    font-size: .8rem;
+    border-bottom: 2px solid #2C3333;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.header-analytics > h4{
+    color:#c2dfff;
+    font-weight: 400;
+    font-size: 1.2rem;
+    padding-bottom: .2rem;
+    border-bottom: 2px solid #c2dfff;
+}
+
+.analytic-container{
+    width: 100%;
+    background : #c2dfff;
+    padding: 1rem 2rem;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin:0 auto;
+}

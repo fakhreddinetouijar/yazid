@@ -1,0 +1,94 @@
+
+<div class="background">
+
+<div class="sidebar">
+    
+    <div class="sidebar-menu">
+      <div class="active">
+      
+      <img src="assets/Image/hps-removebg-preview.png" width="150px">
+      </div>
+         <ul >
+         
+             <li>
+                  <a routerLink="/Menu/analytics" class="link" routerLinkActive="active-link"><span class="las la-chart-bar  "></span>
+                  <span>ANALYTICS</span></a>
+             </li>
+          
+           
+          
+             
+              <li class="active"> <a  class="link" routerLinkActive="active-link"><span class="las la-users-cog  "></span>
+                <span>PARAMETRAGE</span></a>
+            
+                <ul class="sous-menu">
+                  <li><a  routerLink="/Menu/GestionUsers">GestionUsers</a></li>
+                  <li><a  routerLink="/Menu/TerminalUsers">TerminalUsers</a>
+
+                    <ul class="sub-sub-menu">
+                      <li class="optionn"><a routerLink="/Menu/TerminalUsers" ><i class="fa-regular fa-eye fa-lg"  style="margin-right: 11px; font-size: medium;"></i>    List</a></li>
+                      <li class="optionn"><a routerLink="/Menu/UsersEnAttente"><i class="fa-solid fa-hourglass-start" style="margin-right: 11px; font-size: medium;"></i>   Pending TerminalUsers  </a></li>
+                      <li class="optionn"><a routerLink="/Menu/rejectedTerminalusers"><i class="fa-regular fa-eye fa-lg"  style="margin-right: 11px; font-size: medium;"></i>     Rejected TerminalUsers</a></li>
+                      <li class="optionn"><a routerLink="/Menu/AddTerminalUser"> <i class="fa-solid fa-square-plus"  style="margin-right: 11px;  font-size: medium;" ></i>    Add TerminalUsers</a></li>
+                    </ul>
+                  </li>
+                  <li><a  routerLink="/Menu/Merchant">Merchants</a>
+                    <ul class="sub-sub-menu">
+
+                      <li class="optionn"><a routerLink="/Menu/Merchant"><i class="fa-regular fa-eye fa-lg"  style="margin-right: 11px; font-size: medium;"></i>    List  </a></li>
+                      <li class="optionn"><a routerLink="/Menu/MerchantEnAttente"><i class="fa-solid fa-hourglass-start" style="margin-right: 11px; font-size: medium;"></i>   Pending Merchants  </a></li>
+                      <li class="optionn"><a routerLink="/Menu/"><i class="fa-regular fa-eye fa-lg"  style="margin-right: 11px; font-size: medium;"></i>     Rejected Merchant  </a></li>
+                      <li class="optionn"><a routerLink="/Menu/AddMerchant"> <i class="fa-solid fa-square-plus"  style="margin-right: 11px;  font-size: medium;" ></i>    Add Merchant  </a></li>
+                    </ul>
+                  
+                  </li>
+                
+                  <li><a  routerLink="/Menu/Terminal">Terminal</a>
+                    <ul class="sub-sub-menu">
+
+                      <li class="optionn"><a routerLink="/Menu/Terminal"><i class="fa-regular fa-eye fa-lg"  style="margin-right: 11px; font-size: medium;"></i>    List  </a></li>
+                      <li class="optionn"><a routerLink="/Menu/TerminalEnAttente"><i class="fa-solid fa-hourglass-start" style="margin-right: 11px; font-size: medium;"></i>   Pending Terminal  </a></li>
+                      <li class="optionn"><a routerLink="/Menu/rejectedTerminals"><i class="fa-regular fa-eye fa-lg"  style="margin-right: 11px; font-size: medium;"></i>     Rejected Terminal  </a></li>
+                      <li class="optionn"><a routerLink="/Menu/AddTerminal"> <i class="fa-solid fa-square-plus"  style="margin-right: 11px;  font-size: medium;" ></i>    Add Terminal  </a></li>
+                    </ul>
+                  
+                  
+                  
+                  </li>
+                </ul>
+               
+              </li>
+              <li class="transaction">
+                <a routerLink="/Menu/Transactions" class="link" routerLinkActive="active-link"><span class="las la-chart-bar  "></span>
+                <span>TRANSACTIONS</span></a>
+           </li>
+           <li class="transaction">
+            <a (click)="logout()" class="link" ><span class="las la-sign-out-alt "></span>
+            <span>LOGOUT </span></a>
+       </li>
+      
+    
+
+  
+
+   
+
+
+         </ul>
+    </div>
+</div>
+
+<div class="main-content">
+  <div class="active1">
+
+    <header></header></div>
+
+       <main>
+
+        <router-outlet></router-outlet>
+           
+            </main>
+            </div>
+          </div>
+   
+
